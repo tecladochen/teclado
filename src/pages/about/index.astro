@@ -15,25 +15,30 @@ const headings = [
 ---
 
 <PageLayout title='About' {headings} info='/about'>
-  <p>Developer / Designer</p>
+  <p>一个普通的代码爱好者，INFJ，有改变世界的宏伟理想，享受用键盘创造小确幸的过程。</p>
   <p>
-    Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
-    dissentiunt, cu meliore fuisset mei, vel quod voluptua ne. Ex dicat impedit mel, at eum oratio
-    possit voluptatum.
+    典型特征：看到优雅代码会心跳加速，遇到开源项目会手痒贡献，碰到技术难题会熬夜死磕。<br />
+    人生信条：能写代码解决的问题，绝不手动解决（虽然经常制造新问题）。
   </p>
-  <p>My motto: Stay hungry, Stay foolish. <Spoiler>这里可以夹私货</Spoiler></p>
-  <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' style='ahead' />
+  <p>
+    我的日常：开源世界的"点赞收藏党"，博客圈的"佛系更新者"。<br />
+    擅长技能：把简单需求复杂化，再把复杂问题简单化（循环往复）。
+  </p>
+  <p>
+    My motto: Devoted to the ideal, focused on the present. <Spoiler>执着于理想，纯粹于当下</Spoiler
+    >
+  </p>
+  <!-- <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' style='ahead' /> -->
 
   {/* general-talk */}
   <h2 id='hobbies'>Hobbies</h2>
   <ul>
-    <li>Lorem ipsum dolor sit amet, vidit suscipit at mei.</li>
-    <li>
-      Quem denique mea id. Usu ei regione indoctum dissentiunt, cu meliore fuisset mei, vel quod
-      voluptua ne.
-    </li>
-    <li>Ex dicat impedit mel, at eum oratio possit voluptatum.</li>
-    <li>Impetus fuisset ullamcorper pri cu, his posse iisque ad, aliquam honestatis usu id.</li>
+    <li>睡觉是门艺术，追求高质量睡眠</li>
+    <li>魔方爱好者，已掌握2-5阶魔方复原</li>
+    <li>骑行爱好者，单日最长骑行80公里</li>
+    <li>热爱折腾，对有意思有价值的项目充满激情</li>
+    <li>喜欢交朋友，快来做我的网络邻居</li>
+    <li>以及更多等待探索的乐趣……</li>
   </ul>
 
   {/* tools */}
@@ -48,18 +53,6 @@ const headings = [
         description: 'Picture Editing',
         href: 'https://www.adobe.com/products/photoshop',
         icon: import('@/assets/tools/photoshop.svg?raw')
-      },
-      {
-        name: 'Illustrator',
-        description: 'Vector Drawing',
-        href: 'https://www.adobe.com/products/illustrator',
-        icon: import('@/assets/tools/illustrator.svg?raw')
-      },
-      {
-        name: 'After Effects',
-        description: 'Motion Graphics',
-        href: 'https://www.adobe.com/products/aftereffects',
-        icon: import('@/assets/tools/aftereffects.svg?raw')
       },
       {
         name: 'Premiere Pro',
@@ -84,18 +77,6 @@ const headings = [
         description: 'Browser',
         href: 'https://www.mozilla.org/en-US/firefox',
         icon: import('@/assets/tools/firefox.svg?raw')
-      },
-      {
-        name: 'Notion',
-        description: 'Note Taking',
-        href: 'https://www.notion.so/',
-        icon: import('@/assets/tools/notion.svg?raw')
-      },
-      {
-        name: 'Typora',
-        description: 'Markdown Editor',
-        href: 'https://typora.io/',
-        icon: import('@/assets/tools/typora.svg?raw')
       }
     ]}
   />
@@ -110,16 +91,10 @@ const headings = [
         icon: import('@/assets/tools/vscode.svg?raw')
       },
       {
-        name: 'Neovim',
-        description: 'IDE',
-        href: 'https://neovim.io/',
-        icon: import('@/assets/tools/neovim.svg?raw')
-      },
-      {
-        name: 'Sublime Text',
-        description: 'IDE',
-        href: 'https://www.sublimetext.com/',
-        icon: import('@/assets/tools/sublime.svg?raw')
+        name: 'Typora',
+        description: 'Markdown Editor',
+        href: 'https://typora.io/',
+        icon: import('@/assets/tools/typora.svg?raw')
       }
     ]}
   />
@@ -156,10 +131,7 @@ const headings = [
 
   {/* social-networks */}
   <h2 id='social-networks'>Social Networks</h2>
-  <p>
-    Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
-    dissentiunt, cu meliore fuisset mei, vel quod voluptua ne.
-  </p>
+  <p>你可以在以下平台找到我：</p>
   <Substats
     stats={[
       {
