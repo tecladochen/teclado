@@ -15,13 +15,13 @@ const headings = [
 ---
 
 <PageLayout title='About' {headings} info='/about'>
-  <p>一个普通的代码爱好者，INFJ，有改变世界的宏伟理想，享受用键盘创造小确幸的过程。</p>
+  <p>一个普通的代码爱好者，有改变世界的宏伟理想，享受用代码解决问题的过程。</p>
   <p>
-    典型特征：看到优雅代码会心跳加速，遇到开源项目会手痒贡献，碰到技术难题会熬夜死磕。<br />
-    人生信条：能写代码解决的问题，绝不手动解决（虽然经常制造新问题）。
+    看到优雅代码会心跳加速，遇到开源项目会手痒贡献，碰到技术难题会熬夜死磕。<br />
+    能用代码解决的问题，尽量不手动解决（虽然经常制造新问题）。
   </p>
   <p>
-    我的日常：开源世界的"点赞收藏党"，博客圈的"佛系更新者"。<br />
+    开源世界的"点赞收藏党"，博客圈的"佛系更新者"。<br />
     擅长技能：把简单需求复杂化，再把复杂问题简单化（循环往复）。
   </p>
   <p>
@@ -33,18 +33,16 @@ const headings = [
   {/* general-talk */}
   <h2 id='hobbies'>Hobbies</h2>
   <ul>
-    <li>享受高质量睡眠，认为休息是生活的基础</li>
-    <li>魔方入门级玩家，已掌握2-5阶魔方复原</li>
-    <li>骑行爱好者，单日最长骑行80公里</li>
-    <li>热爱折腾，对有意思有价值的项目充满激情</li>
-    <li>好奇心重，对编程以外的领域充满探索欲</li>
+    <li>魔方入门级玩家，已掌握2-5阶魔方复原，更多种类魔方持续摸索中</li>
+    <li>骑行爱好者，单日最长骑行80公里，月总骑行距离120公里</li>
+    <li>打字竞速选手，双拼重度用户，平均速度 54WPM/298KPM</li>
     <li>以及更多等待发掘的乐趣……</li>
   </ul>
 
   {/* tools */}
   <h2 id='tools'>Tools</h2>
-  <p>Current support tools as follow:</p>
-  <ToolSection
+  <p>以下是我正在使用的一些工具：</p>
+  <!-- <ToolSection
     class='mb-5'
     title='Design'
     tools={[
@@ -61,8 +59,8 @@ const headings = [
         icon: import('@/assets/tools/premiere.svg?raw')
       }
     ]}
-  />
-  <ToolSection
+  /> -->
+  <!-- <ToolSection
     class='mb-5'
     title='Productivity'
     tools={[
@@ -79,7 +77,7 @@ const headings = [
         icon: import('@/assets/tools/firefox.svg?raw')
       }
     ]}
-  />
+  /> -->
   <ToolSection
     class='mb-5'
     title='Development'
@@ -98,7 +96,7 @@ const headings = [
       }
     ]}
   />
-  <ToolSection
+  <!-- <ToolSection
     class='mb-5'
     title='Environment'
     tools={[
@@ -127,7 +125,7 @@ const headings = [
         icon: import('@/assets/tools/windows11.svg?raw')
       }
     ]}
-  />
+  /> -->
 
   {/* social-networks */}
   <h2 id='social-networks'>Social Networks</h2>
@@ -157,7 +155,8 @@ const headings = [
   <h2 id='gossips'>Gossips</h2>
   <Collapse title='Why called teclado?'>
     teclado
-    在葡萄牙语中是“键盘”的意思。都说使用计算机时可以没有鼠标，但是不能没有键盘。键盘是编程开发中必不可少的工具，也是我创造和表达的载体。所以我采用“teclado”作为我的网络代号，寓意对编程和创造的热爱。
+    在葡萄牙语中是“键盘”的意思。都说使用计算机可以没有鼠标，但不能没有键盘。键盘是计算机的一种不可或缺的输入设备，也是我们创造和表达的工具载体。所以使用
+    teclado 作为我的昵称，寓意对编程和创造的热爱。
   </Collapse>
 
   {/* about-blog */}
@@ -166,49 +165,45 @@ const headings = [
   <Timeline
     events={[
       {
-        date: '2024-04-29',
-        content:
-          'Website refactored using <a href="https://astro.build/" target="_blank">Astro</a> and <a href="https://github.com/srleom/astro-theme-resume" target="_blank">Astro Theme Resume</a>'
+        date: '2021-04-22',
+        content: '初次接触博客，使用 Hexo 框架，以及 Butterfly 主题，部署在 Github Pages 上'
       },
       {
-        date: '2024-07-26',
-        content:
-          'Website abstracted as a theme and published on <a href="https://github.com/cworld1/astro-theme-pure"target="_blank">Github</a>'
+        date: '2023-10-24',
+        content: '购买人生第一个域名 ilovejie.com'
       },
       {
-        date: '2024-07-27',
-        content: 'Began writing website docs'
+        date: '2024-02-19',
+        content: '博客迁移至阿里云服务器，采用 Wordpress 框架，使用 Puock 主题'
+      },
+      {
+        date: '2025-06-06',
+        content: '购买域名 teclado.cn'
+      },
+      {
+        date: '2025-06-08',
+        content: '博客迁移至 Vercel 平台，采用 Astro 框架，使用 Astro Theme Pure 主题'
       }
     ]}
   />
-  <p>
-    The smooth operation and personalized customization of website also rely on the resources and
-    technical support provided by the following excellent projects/service providers:
-  </p>
+  <p>本站基于以下项目/服务提供商的资源和技术支持：</p>
   <ul>
-    <li>Domain: <a href='#' target='_blank'>Vercel</a></li>
+    <li>域名：<a href='https://aliyun.com' target='_blank'>AliCloud</a></li>
     <li>
-      Framework & Theme: <a href='https://astro.build/' target='_blank'>Astro</a> + <a
+      框架 & 主题：<a href='https://astro.build/' target='_blank'>Astro</a> + <a
         href='https://github.com/cworld1/astro-theme-pure'
         target='_blank'>Astro Theme Pure</a
       >
     </li>
     <li>
-      Site hosting: <a href='https://vercel.com/' target='_blank'>Vercel</a>
+      站点托管：<a href='https://vercel.com/' target='_blank'>Vercel</a>
     </li>
-    <li>
-      CI/CD: <a href='https://vercel.com/workflow' target='_blank'>Vercel Workflow</a>
-    </li>
+
     <!-- <li>Resources speedup: <a href='https://cdn.cbd.int/' target='_blank'>CBD CDN</a></li> -->
-    <li>Comment system: <a href='https://waline.js.org' target='_blank'>Waline</a></li>
+    <li>评论系统：<a href='https://waline.js.org' target='_blank'>Waline</a></li>
+
     <li>
-      Visits: <a href='https://supabase.com/' target='_blank'>Supabase</a> +
-      <a href='https://waline.js.org/' target='_blank'>Waline</a>
-    </li>
-    <li>
-      Other statistics: <a href='https://github.com/spencerwooo/substats' target='_blank'
-        >Substats</a
-      >
+      相关统计：<a href='https://github.com/spencerwooo/substats' target='_blank'>Substats</a>
     </li>
   </ul>
   <Comment slot='bottom' />
