@@ -78,7 +78,7 @@ export const theme: ThemeUserConfig = {
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: false,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/cworld1/astro-theme-pure', email: 'emailto:teclado@foxmail.com' }
+    social: { github: 'https://github.com/tecladochen' }
   },
 
   content: {
@@ -87,7 +87,8 @@ export const theme: ThemeUserConfig = {
     blogPageSize: 8,
     externalLinkArrow: true, // show external link arrow
     // Currently support weibo, x, bluesky
-    share: ['weibo', 'x', 'bluesky']
+    // share: ['weibo', 'x', 'bluesky']
+    share: ['weibo']
   }
 }
 
