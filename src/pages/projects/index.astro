@@ -6,17 +6,17 @@ import { Button, Collapse, Icon } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
 import ProjectSection from '@/components/projects/ProjectSection.astro'
 import Sponsors from '@/components/projects/Sponsors.astro'
-import alipay from '@/assets/alipay-qrcode.jpg'
+import alipay from '@/assets/alipay.jpg'
 import KeyIcon from '@/assets/icons/key.svg'
-import wechat from '@/assets/wechat-qrcode.jpg'
+import wechat from '@/assets/wechat.jpg'
 import config from '@/site-config'
 
 const headings = [
   { depth: 2, slug: 'theme', text: 'Theme' },
   { depth: 2, slug: 'programs', text: 'Programs' },
-  { depth: 2, slug: 'learnings', text: 'Learnings' },
-  { depth: 2, slug: 'others', text: 'Others' },
-  { depth: 2, slug: 'gpg-signature', text: 'GPG Signature' },
+  // { depth: 2, slug: 'learnings', text: 'Learnings' },
+  // { depth: 2, slug: 'others', text: 'Others' },
+  // { depth: 2, slug: 'gpg-signature', text: 'GPG Signature' },
   { depth: 2, slug: 'sponsorship', text: 'Sponsorship' }
 ]
 ---
@@ -64,7 +64,11 @@ const headings = [
     ]}
   />
 
-  <!-- <h2 id='programs'>Programs</h2>
+
+  
+  
+
+  <h2 id='programs'>Programs</h2>
   <ProjectSection
     project={[
       {
@@ -91,7 +95,7 @@ const headings = [
     ]}
   />
   <Collapse title='Some old projects'>
-    <ProjectSection
+    <!-- <ProjectSection
       project={[
         {
           name: 'Search Switcher',
@@ -107,8 +111,9 @@ const headings = [
           ]
         }
       ]}
-    />
-  </Collapse> -->
+    /> -->
+    Nothing here.
+  </Collapse>
 
   <!-- <h2 id='learnings'>Learnings</h2>
   <ProjectSection
@@ -157,31 +162,30 @@ const headings = [
   <Button href='https://keys.openpgp.org/search?q=APTX4869' title='Checkout my key' target='_blank'>
     <KeyIcon class='size-5' slot='before' />
   </Button> -->
-
-  <!-- sponsorship -->
-  <!-- <h2 id='sponsorship'>赞赏</h2>
-  <p>感谢您的赞赏，您的支持是我最大的动力。</p>
-  <div class='flex flex-col justify-center gap-4 sm:flex-row'>
-    {
-      [
-        { name: 'WeChat', icon: 'wechat-pay', image: wechat },
-        { name: 'Alipay', icon: 'alipay', image: alipay }
-      ].map((item) => (
-        <div class='group relative justify-center overflow-hidden rounded-xl border bg-white'>
-          <div class='absolute bottom-0 end-0 start-0 top-0 flex items-center justify-center transition-opacity group-hover:opacity-0'>
-            <Icon class='size-20' name={item.icon as iconsType} />
-          </div>
-          <Image
-            class='mx-auto my-0 max-w-60 opacity-30 blur-sm transition-opacity group-hover:opacity-100 group-hover:blur-none'
-            src={item.image}
-            alt={item.name}
-            loading='lazy'
-          />
+<!-- sponsorship -->
+<h2 id='sponsorship'>赞赏</h2>
+<p>感谢您的赞赏，您的支持是我最大的动力。</p>
+<div class='flex flex-col justify-center gap-4 sm:flex-row'>
+  {
+    [
+      { name: 'WeChat', icon: 'wechat-pay', image: wechat },
+      { name: 'Alipay', icon: 'alipay', image: alipay }
+    ].map((item) => (
+      <div class='group relative justify-center overflow-hidden rounded-xl border bg-white'>
+        <div class='absolute bottom-0 end-0 start-0 top-0 flex items-center justify-center transition-opacity group-hover:opacity-0'>
+          <Icon class='size-20' name={item.icon as iconsType} />
         </div>
-      ))
-    }
-  </div>
-  <p>Thanks to the following sponsors:</p>
+        <Image
+          class='mx-auto my-0 max-w-60 opacity-30 blur-sm transition-opacity group-hover:opacity-100 group-hover:blur-none'
+          src={item.image}
+          alt={item.name}
+          loading='lazy'
+        />
+      </div>
+    ))
+  }
+</div>
+  <!-- <p>Thanks to the following sponsors:</p>
   <Sponsors
     sponsors={[
       { name: 'C*a（酷安@暴走の蜗牛）', amount: '2.00', date: '2019-07-02' },

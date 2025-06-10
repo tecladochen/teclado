@@ -8,10 +8,10 @@ import { Button, Card, Icon, Label } from 'astro-pure/user'
 import PageLayout from '@/layouts/BaseLayout.astro'
 import Section from '@/components/home/Section.astro'
 import SkillLayout from '@/components/home/SkillLayout.astro'
-import avatar from '@/assets/avatar.png'
+import avatar from '@/assets/avatar.jpg'
 import config from '@/site-config'
 
-const languages = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Python', 'C#', 'Shell', 'SQL']
+const languages = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Python', 'C#', 'Shell']
 const frontend = ['React', 'Vue', 'Astro', 'NextJs', 'Vite', 'Tailwind']
 const backend = ['NodeJs', 'Koa', 'Flask', 'PostgreSQL', 'MongoDB', 'Redis', 'Chroma']
 const aiTechs = ['PyTorch', 'Jupyter Lab', 'LangChain', 'HuggingFace Transformers']
@@ -159,7 +159,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         <Card
           as='a'
           heading='Certified Kubernetes Administrator'
-          subheading='Passed the Certified Kubernetes Administrator China Exam (CKA-CN) and obtained the Certified Kubernetes Administrator certificate.'
+          subheading='Passed the Certified Kubernetes Administrator China Exam (CKA-CN).'
           date='December 17, 2023'
           href='hhttps://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/'
         >

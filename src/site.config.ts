@@ -24,7 +24,7 @@ export const theme: ThemeUserConfig = {
   },
   /** Set a logo image to show in the homepage. */
   logo: {
-    src: 'src/assets/avatar.png',
+    src: 'src/assets/avatar.jpg',
     alt: 'Avatar'
   },
 
@@ -115,7 +115,7 @@ export const integ: IntegrationUserConfig = {
     server: 'https://v1.hitokoto.cn/?c=i',
     // target: (data) => (data as { hitokoto: string }).hitokoto || 'Error'
     target: `(data) => data.hitokoto || 'Error'`
-    
+
     // https://github.com/lukePeavey/quotable
     // server: 'https://api.quotable.io/quotes/random?maxLength=60',
     // target: `(data) => data[0].content || 'Error'`
