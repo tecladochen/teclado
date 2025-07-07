@@ -14,8 +14,6 @@ tags:
 heroImage: { src: './thumbnail.png', color: '#42555f' }
 
 language: '中文'
-
-draft: true
 ---
 在之前介绍过了什么是 embedding 以及在构建 RAG 系统时如何选择合适的 embedding 模型，当我们将原始数据嵌入成 embedding 向量后，为了能重复使用这些向量数据，我们就需要一个专门用于向量存储的数据库——向量数据库（vector database）。
 
