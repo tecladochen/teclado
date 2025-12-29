@@ -59,6 +59,11 @@ export const theme: ThemeUserConfig = {
     links: [
       // Registration link
       {
+        title: '浙ICP备2023044092号-3',
+        link: 'https://beian.miit.gov.cn/',
+        style: 'text-sm' // Uno/TW CSS class
+      },
+      {
         title: '萌ICP备20250692号',
         link: 'https://icp.gov.moe/?keyword=20250692',
         style: 'text-sm' // Uno/TW CSS class
