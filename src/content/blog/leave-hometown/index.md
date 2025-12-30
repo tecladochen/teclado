@@ -10,7 +10,7 @@ tags:
 
  - Reading
 
-heroImage: { src: './thumbnail.png', color: '#245e60' }
+heroImage: { src: '../../thumbnails/bamboo.jpg', color: '#245e60' }
 
 language: '中文'
 
