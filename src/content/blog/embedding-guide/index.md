@@ -10,7 +10,7 @@ tags:
 
  - NLP
 
-heroImage: { src: '../../thumbnails/xiaolan.jpg', color: '#98725a' }
+heroImage: { src: '../../thumbnails/xiaolan.png', color: '#98725a' }
 
 language: '中文'
 

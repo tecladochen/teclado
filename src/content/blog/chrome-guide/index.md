@@ -11,7 +11,7 @@ tags:
  - vector database
  - chroma
 
-heroImage: { src: '../../thumbnails/blackdaisy.jpg', color: '#1b1c1c' }
+heroImage: { src: '../../thumbnails/blackdaisy.png', color: '#1b1c1c' }
 
 language: '中文'
 ---

@@ -10,7 +10,7 @@ tags:
 
  - uv
 
-heroImage: { src: '../../thumbnails/bluesky.jpg', color: '#026695' }
+heroImage: { src: '../../thumbnails/bluesky.png', color: '#026695' }
 
 language: '中文'
 

@@ -10,7 +10,7 @@ tags:
 
  - Cloudreve
 
-heroImage: { src: '../../thumbnails/xiaoxin.jpg', color: '#353c67' }
+heroImage: { src: '../../thumbnails/xiaoxin.png', color: '#353c67' }
 
 language: '中文'
 

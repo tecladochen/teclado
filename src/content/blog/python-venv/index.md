@@ -10,7 +10,7 @@ tags:
 
  - venv
 
-heroImage: { src: '../../thumbnails/nightmoon.jpg', color: '#152b33' }
+heroImage: { src: '../../thumbnails/nightmoon.png', color: '#152b33' }
 
 language: '中文'
 

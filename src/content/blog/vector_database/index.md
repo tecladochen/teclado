@@ -11,7 +11,7 @@ tags:
  - vector database
  - vector index
 
-heroImage: { src: '../../thumbnails/colorcloud.jpg', color: '#42555f' }
+heroImage: { src: '../../thumbnails/colorcloud.png', color: '#42555f' }
 
 language: '中文'
 ---
